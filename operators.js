@@ -1,0 +1,13 @@
+console.log("Operators in javascript");
+let a = 100;
+let b  = 90;
+console.log("a + b = ", a+b);
+console.log("a - b = ", a-b);
+console.log("a / b = ", a/b);
+console.log("a * b = ", a*b);
+console.log("a % b = ", a%b);
+console.log("++a = ", ++a);
+console.log("a++ = ", a++);
+console.log("--a = ", --a);
+console.log("a-- = ", a--);
+console.log("a ** b = ", a**b);
