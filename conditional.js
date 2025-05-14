@@ -29,37 +29,38 @@
 // }
 //Q-4- WAP TO TAKE INPUT FROM THE USER AND CHECK IT IS ELIGIBLE FOR VOTING OR NOT IF USER IS ELIGIBLE FOR
 //  VOTING THEN CHECK USER IS INDIAN OR NOT
-//  let age=parseInt(prompt("Enter age: "))
-//  let nationality=prompt("Enter natioanlity: ")
-//   if(age>=18){
-//     if(nationality=="Indian"){
-//         alert("You are eligible for voting")
-//     }
-//     else{
-//         alert("You are not eligible for voting")
-//     }
-//   }
-//   else{
-//     alert("You are not eligible for voting")
-//   }
+ let age=parseInt(prompt("Enter age: "))
+ let nationality=prompt("Press 1 for Indian")
+  if(age>=18){
+    if(nationality=="1"){
+        alert("You are eligible for voting")
+    }
+    else{
+        alert("You are not eligible for voting")
+    }
+  }
+  else{
+    alert("You are not eligible for voting")
+  }
 //Q-5- WAP TO FIND SIGN OF PRODUCT OF THREE NUMBERS
-let a = parseInt(prompt("Enter first number: "))
-let b = parseInt(prompt("Enter second number: "))
-let c = parseInt(prompt("Enter third number: "))
-if(a>0 && y>0 && z>0){
-    alert("The sign is +ve")
-}
-else if(a>0 && b<0 && c>0){
-    alert("The sign is -ve")
-}
-else if(a>0 && b>0 && c<0){
-    alert("The sign is -ve")
-}
-else if(a<0 && b>0 && c>0){
-    alert("The sign is -ve")
-}
-else{
-    alert("The number is not defined")
-}
-
+// let a = parseInt(prompt("Enter first number: "))
+// let b = parseInt(prompt("Enter second number: "))
+// let c = parseInt(prompt("Enter third number: "))
+// if(a>0 && y>0 && z>0){
+//     alert("The sign is +ve")
+// }
+// else if(a>0 && b<0 && c>0){
+//     alert("The sign is -ve")
+// }
+// else if(a>0 && b>0 && c<0){
+//     alert("The sign is -ve")
+// }
+// else if(a<0 && b>0 && c>0){
+//     alert("The sign is -ve")
+// }
+// else{
+//     alert("The number is not defined")
+// // }
+// Q-6- WAP TO SORT THREE Numbers
+// let a = 
   
