@@ -24,6 +24,6 @@ let a=parseInt(prompt("Enter any number: "));
 let b=1;
 let c=a*b;
 while(b<=10){
-    console.log(a*b)
+    console.log(a "*" b "=" c);
     b++;
 }
