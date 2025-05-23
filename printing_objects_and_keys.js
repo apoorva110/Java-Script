@@ -1,3 +1,4 @@
+//Q- PRINT 10 OBJECT ELEMENTS FIND OBJECT KEY ONLY(WHICHEVER IS FIRST)
 let emp={
     name:"Apoorva",
     Designation:"SDE",
@@ -17,5 +18,5 @@ let emp={
 }
  console.log(emp)
 for(let k in emp){
-    console.log(k.Account_details)
+    console.log(k.emp.name)
 }
