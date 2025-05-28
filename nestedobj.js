@@ -1,4 +1,4 @@
-//NESTED OBJECT
+ //NESTED OBJECT
 let emp={
     emp_name:"Apoorva",
     emp_id:1,

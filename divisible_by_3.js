@@ -1,14 +1,36 @@
-function Divisible(){
-    let a = prompt("Enter a number: ")
-    let c;
-    if(a%3==0){
+
+// function Divisible(){
+//     let a = prompt("Enter a number: ")
+//     let c;
+//     if(a%3==0){
+            console.log("It is divisible by 3")
+//         for(let i=1;i<=10;i++){
+//             c = 3 * i;
+//         }
+//         console.log(c)
+//     }
+//         else{
+//         alert("The entered number is: " +a)
+//         }
+// }
+// Divisible()
+function Demo(a){
+    if(a%3==0)
+    {
+        console.log("it is divisible by 3")
+        let num=a;
         for(let i=1;i<=10;i++){
-            c = a * i;
+            console.log(num * i )
         }
-        console.log(c)
     }
-        else{
-        alert(a)
-        }
+    
+    else{
+        console.log("not divisble by 3")
+        let j=12;
+        console.log("number",j)
+
+    }
+    return a
 }
-Divisible()
+a=parseInt(prompt("enter the divisible a"))
+console.log(Demo(a))
