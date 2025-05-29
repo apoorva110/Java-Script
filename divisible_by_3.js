@@ -26,10 +26,7 @@ function Demo(a){
     
     else{
         console.log("not divisble by 3")
-        let j=12;
-        console.log("number",j)
-
-    }
+}
     return a
 }
 a=parseInt(prompt("enter the divisible a"))
