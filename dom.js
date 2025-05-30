@@ -8,11 +8,10 @@
 
 let list = document.getElementsByTagName('li')
 console.log(list);
-
-list[0].backgroundColor = "blue"
-list[2].backgroundColor = "blue"
-list[4].backgroundColor = "blue"
-list[6].backgroundColor = "blue"
-list[8].backgroundColor = "blue"
-list[10].backgroundColor = "blue"
+for(let i = 0;i<10;i++){
+    if(i%2==0){
+        list[i].style.backgroundColor = "blue"
+        list[i].style.color = "white";
+    }
+}
 
