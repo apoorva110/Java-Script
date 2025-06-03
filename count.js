@@ -3,6 +3,12 @@ let v=0;
 function increment(){
     v++;
     document.getElementById('count').innerHTML = v;
+    if(v%2==0){//even no. should come in red color
+        count.style.color="red";
+    }
+    else{
+        count.style.color="black"
+    }
 }
 function decrement(){
     v--;
