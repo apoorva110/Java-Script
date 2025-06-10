@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        const myimg='air_logo.jpg'
+        const box=document.querySelector("#box")
+        console.log(box)
+        const img=['./myimages/img1.jpeg','/myimages/img2.jpeg','./myimages/img3.jpeg']
+        myimg=img.map((e)=>{
+            return`
+            <img src="${e}" alt="img" onClick=alert('hiii')>
+            `})
+        box.innerHTML=myimg;
+    </script>
+</body>
+</html>
