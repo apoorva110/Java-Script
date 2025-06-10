@@ -1,3 +1,9 @@
+//Q- WRITE A CODE WHICH CAN GIVE GRADES TO STUDENTS ACCORDING TO THEIR SCORE
+//80-100 - A
+//70-89 - B
+//60-69 - C
+//50-59 - D
+//0-49 - F
 let score=prompt("Enter score of student: ");
 if(score>=80 && score<=100){
     alert("The grade of student is A")
