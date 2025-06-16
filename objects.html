@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECTS</title>
+</head>
+<body>
+    <h1>OBJECTS</h1>
+    <div id="div"></div>
+
+    <script>
+        // let arr=['ram','shyam','radheshyam']
+        // let x=document.getElementById("div")
+        // let y=arr.find((e)=>{return e==="ram"});
+        // x.innerHTML=y;
+        // let myobj={
+        //     fname:"Apoorva",
+        //     lname:"Tayal",
+        //     email:"apoorvatyul@gmail.com",
+        //     password:"12345",
+        //     "key":"value",
+        //     [mysymb]:"value3"
+        // }
+        // console.log(myobj["fname"])
+        // console.log(myobj["key"])
+        // myobj.key2="value2";
+        // Object.freeze(myobj);
+        // myobj.freeze(myobj);
+        // myobj.fname="adira";
+        // console.log(myobj);
+        // console.log(myobj)
+        // // let myobj1=new Object();
+        // // console.log(myobj)
+        // // console.log(myobj1)
+        let obj10={
+            "key1":"value1",
+            "key2":"value2",
+            "key3":"value3"
+        }
+        let obj20={
+            "key4":"value4",
+            "key5":"value5",
+            "key6":"value6"
+        }
+        let obj3={...obj10,...obj20};
+        console.log(obj3)
+        let obj4=Object.assign({},obj10,obj20)
+        console.log(obj4)
+    </script>
+</body>
+</html>

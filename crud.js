@@ -35,14 +35,21 @@ const handleupdate=()=>{
     let ind=arr.findIndex((e)=>e===data);
     let data2=document.getElementById('update').value;
     console.log(ind);
-}
     if(ind==-1){
         console.log("not found")}
     else{
-        arr[ind]=data2;}
-update_btn.addEventListener('click',function(){
+        arr[ind]=data2;}}
+    update_btn.addEventListener('click',function(){
     alert("create")
 })
+const handledelete=()=>{
+    let data=document.getElementById('finddelete').value
+    let ind=arr.findIndex((e)=>e===data);
+    console.log(ind);
+    if(ind==-1){
+        console.log("not found")}
+    else{
+        arr.splice(ind,1)}}   
 delete_btn.addEventListener('click',function(){
-    alert("create")
+    alert("deleted")
 })
