@@ -7,11 +7,18 @@
 </head>
 <body>
     <script>
-        localStorage.setItem("key","apoorva");
-        let data=localStorage.getItem("key");
+        // localStorage.setItem("key","apoorva");
+        // let data=localStorage.getItem("key");
         // console.log(data);
-        let dat=localStorage.removeItem("key")
-        console.log(dat)
+        // let dat=localStorage.removeItem("key")
+        // console.log(dat);
+        let data={
+            name:"apoorva",
+            age:20
+        }
+        localStorage.setItem("key", JSON.stringify(data));
+        let locdata=JSON.parse(localStorage.getItem("key"));
+        console.log(locdata)
     </script>
 </body>
 </html>
