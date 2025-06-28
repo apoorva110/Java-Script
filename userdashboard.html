@@ -7,14 +7,28 @@
 </head>
 <body>
     <H1>YOU ARE REGISTERED</H1>
+    <div id="data1"></div>
+    <button onlcick=userlogout() class="btn">LOGOUT</button>
+    <button onclick="window.location.href='/userupdate.html'" class="btn">UPDATE</button>
     <script>
-        let islogin=JSON.parse(localStorage.getItem);
-        let data=docuemnt.getElementById("data")
-            data.innerHTML=`
+        let islogin=JSON.parse(localStorage.getItem("islogin"));
+        if(islogin){
+        let data1=docuemnt.getElementById("data1");
+        data.innerHTML=`
             <h1>${islogin.name}</h1>
             <h1>${islogin.email}</h1>
-            <h1>${islogin.password}</h1>
-            <h1>${islogin.mobile}</h1> `
+            <h1>${islogin.mobile}</h1>
+            <h1>${islogin.password}</h1> `}
+            else{
+                data1.innerHTML="<h1>please login</h1>"
+            }
+            const userlogout=()=>{
+                localStorage.removeItem("islogin");
+                window.location.href='/userlogin.html';
+                // let btn=document.querySelectorAll(".btn");
+                // btn.forEach((e)=>{
+                //     e.style.display='none';
+            }
     </script>
 </body>
 </html>

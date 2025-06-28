@@ -7,29 +7,30 @@
 </head>
 <body>
     <h1>USER LOGIN</h1>
-    <form action="">
-        Email:<input type="text"><br>
-        Password:<input type="text"><br>
+    <form action="" id="form">
+        Email:<input type="text" id="email"><br>
+        Password:<input type="text" id="password"><br>
         <input type="submit" value="login">
     </form>
+    <div id="invalid"></div>
     <script>
-        let user=JSON.parse(localStorage.getItem("user") || '[]')
+        let user=JSON.parse(localStorage.getItem("user") || '[]');
         console.log(user)
         let invalid=document.getElementById("invalid");
         let form=document.getElementById("form");
-        form.addEventListener("submit",((e)=>{
+        form.addEventListener("submit",(e)=>{
             e.preventDefault();
             let email=document.getElementById('email').value;
             let password=document.getElementById('password').value;
             console.log(email,password);
-            let founduser=user.find(e=>e.email==email && e.password==password);
+            let founduser=user.find(e=>e.email===email && e.password===password);
             if(founduser){
                 localStorage.setItem('islogin',JSON.stringify(founduser))
                 window.location.href='/userdashboard.html';
             }else{
                 invalid.innerHTML=`<h1>invalid email or password</h1>`;
             }
-        }))
+        })
     </script>
 </body>
 </html>

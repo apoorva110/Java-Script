@@ -1,5 +1,5 @@
 //let user=[];
-let user=JSON.parse(localStorage.getItem("user")||'[]');
+let user=JSON.parse(localStorage.getItem("user") || '[]');
 const userdata=(e)=>{
     e.preventDefault();
     let name=document.getElementById('name').value;
