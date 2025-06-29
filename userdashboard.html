@@ -8,9 +8,10 @@
 <body>
     <H1>YOU ARE REGISTERED</H1>
     <div id="data1"></div>
-    <button onlcick=userlogout() class="btn">LOGOUT</button>
-    <button onclick="window.location.href='/userupdate.html'" class="btn">UPDATE</button>
+    <input type="submit" value="LOGOUT" onclick="userlogout()" id="btn">
+    <input type="submit" value="UPDATE" onlclick="window.location.href='update.html'" id="btn">
     <script>
+        
         let islogin=JSON.parse(localStorage.getItem("islogin"));
         if(islogin){
         let data1=docuemnt.getElementById("data1");
